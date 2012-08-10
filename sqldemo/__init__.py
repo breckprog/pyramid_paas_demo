@@ -13,7 +13,7 @@ def main(global_config, **settings):
 
     config = Configurator(settings=settings)
     env = get_paas_env(config)
-    print env.get_postgresql_url()
+    print "postgresql url: %s;" % env.get_postgresql_url()
     engine = create_engine(env.get_postgresql_url())
     DBSession.configure(bind=engine)
     # Create tables if they don't already exist
