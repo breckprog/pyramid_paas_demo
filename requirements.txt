@@ -16,3 +16,4 @@ zope.deprecation==4.0.0
 zope.interface==4.0.1
 sqlalchemy==0.7.8
 psycopg2==2.4.5
+gunicorn==0.14.6

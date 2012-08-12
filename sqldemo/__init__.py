@@ -1,8 +1,6 @@
 from pyramid.config import Configurator
 from pyramid_paas import get_paas_env
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import engine_from_config
 
 from .models import DBSession, Base
 
